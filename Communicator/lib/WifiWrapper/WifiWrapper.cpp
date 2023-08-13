@@ -5,6 +5,7 @@
 
 WifiWrapper::WifiWrapper(std::string ssid, std::string passWord)
 {
+    //todo: add arguments check
     WifiWrapper::ssid = ssid;
     WifiWrapper::pass = passWord;
     WifiWrapper::status = CONNECTION_STATUS_IDLE;
@@ -90,5 +91,8 @@ std::string WifiWrapper::GetIPAddr()
 
 WifiWrapper::~WifiWrapper()
 {
-
+    if(WifiWrapper::status == CONNECTION_STATUS_CONNECTED)
+    {
+        WifiWrapper::Disconnect();
+    }
 }
