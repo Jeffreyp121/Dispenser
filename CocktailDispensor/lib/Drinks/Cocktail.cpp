@@ -7,7 +7,7 @@ std::string Cocktail::GetName() const
    return Cocktail::name;
 }
 
-bool Cocktail::AddDrink(Beverage drink, uint16_t ml)
+bool Cocktail::AddDrink(Beverage* drink, uint16_t ml)
 {
     bool success = (drinkCount < MAX_AMOUNT_OF_DRINKS);
 
@@ -22,7 +22,7 @@ bool Cocktail::AddDrink(Beverage drink, uint16_t ml)
 
 void Cocktail::GetCocktailInfo()
 {
-    for(Beverage beverage : drinks)
+    for(Beverage* beverage : drinks)
     {
         //TODO: find way to print in a generic module
     }
