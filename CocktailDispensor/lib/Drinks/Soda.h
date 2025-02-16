@@ -1,7 +1,7 @@
 #ifndef _DRINKS_SODA_H_
 #define _DRINKS_SODA_H_
 
-#include <string>
+#include <Macro.h>
 #include "Beverage.h"
 
 class Soda: Beverage

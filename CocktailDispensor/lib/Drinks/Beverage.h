@@ -1,7 +1,7 @@
 #ifndef _DRINKS_BEVERAGE_H_
 #define _DRINKS_BEVERAGE_H_
 
-#include <string>
+#include <Macro.h>
 #include <Drinks.h>
 
 class Beverage: IDrinks

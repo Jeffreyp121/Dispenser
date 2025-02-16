@@ -1,6 +1,4 @@
 #include "Cocktail.h"
-#include <cstring>
-#include "Arduino.h"
 
 std::string Cocktail::GetName() const
 {

@@ -1,7 +1,7 @@
 #ifndef _DRINKS_JUICE_H_
 #define _DRINKS_JUICE_H_
 
-#include <string>
+#include <Macro.h>
 #include "Beverage.h"
 
 class Juice: Beverage

@@ -2,7 +2,7 @@
 #define _DRINKS_COCKTAIL_H_
 
 #include <vector>
-#include <string>
+#include <Macro.h>
 #include "Beverage.h"
 #include <Drinks.h>
 
