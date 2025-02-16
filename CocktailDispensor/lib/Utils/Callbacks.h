@@ -3,5 +3,7 @@
 
 /** \brief task callback function */
 typedef void (*TaskCallback)(void* parameters);
+/** \brief Inter core callback */
+typedef void(*InterCoreCallback)(void* parameters);
 
 #endif /* */
