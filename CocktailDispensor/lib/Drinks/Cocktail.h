@@ -9,7 +9,6 @@
 /** \brief Maximum amount of mixed drinks */
 #define MAX_AMOUNT_OF_DRINKS  (uint8_t)5
 
-
 class Cocktail : IDrinks
 {
     private:
