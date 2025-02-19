@@ -12,7 +12,6 @@ static const char* password = "";
 
 void setup() 
 {
-  pinMode(5, OUTPUT);
   IPAddress local_IP(192, 168, 178, 184);
   // Set your Gateway IP address
   IPAddress gateway(192, 168, 178, 1);
@@ -28,23 +27,15 @@ void setup()
   {
     Serial.println("STA Failed to configure");
   }
+  
   while(WiFi.status() != WL_CONNECTED)
   {
-      Serial.print("Unable to connect to wifi");
-      delay(500);
+    delay(500);
   }
-  digitalWrite(5, HIGH);
-
-  Serial.print(WiFi.localIP());
   bootloader = new Bootloader();
 }
 
 void loop() 
 {
   bootloader->UpdateFirmware();
-
-  digitalWrite(15 , HIGH);
-  delay(1000);
-  digitalWrite(15 , LOW);
-  delay(1000);
 }
