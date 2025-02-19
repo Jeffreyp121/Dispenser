@@ -3,6 +3,7 @@
 
 #include <Macro.h>
 
+
 typedef enum
 {
     INTERCORE_FIREBASE,         /* Firebase intercore communication */
